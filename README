@@ -1,0 +1,26 @@
+Zen Cart Themes Based on Twitter Bootstrap
+
+Here is the list of what you get from this themes :
+
+1. Responsive design
+
+2. Sticky header with colapsible menu.
+
+3. Nice Button (You must activate CSS Button on Configuration->Layout Setting)
+
+4. Nice pager (Prev-Next on product info page) and Nice Pagination (<Prev|1|2|3|4|Next>)
+
+5. Product grid layout
+
+6. I have tried to minimize the number of "hacks" on non-templates files, this is the list of non-templates that need to be modified :
+
+- includes/classes/split_page_results.php -> Pagination
+- includes/functions/html_output -> CSS Button
+- includes/language/english/php -> Change "...more info" to "More Info"
+- includes/modules/pages/specials/main_template_vars.php -> Fix grid style on specials page
+
+7. There is something else, i forget it :D
+
+You can contribute here, it would be my pleasure to develop it together and give something back to the community to make Zen Cart better.
+
+Thanks

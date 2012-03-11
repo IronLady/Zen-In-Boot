@@ -1,0 +1,71 @@
+/*Begin Override*/
+
+#mainWrapper {
+	margin-top: 50px;
+}
+.centeredContent {
+	text-align: center;
+}
+.productGrid {
+	margin-top: 10px;
+}
+.productGrid .span4{width:31%;}
+.thumbnail {
+	min-height:200px;
+}
+#navSuppWrapper  .nav{
+	margin: 0 auto;
+}
+#navSupp {
+	margin: 0 auto;
+}
+.normalprice, .productSpecialPriceSale {
+	text-decoration: line-through;
+	}
+.productSpecialPrice, .productSalePrice, .productSpecialPriceSale, .productPriceDiscount {
+	color: #ff0000;
+	}
+.banners {
+	clear: both;
+	text-align: center;
+}
+FORM, SELECT, INPUT {
+	display: inline;
+	font-size: 1em;
+	margin: 0.1em;
+	}
+TEXTAREA {
+/*	float: left;*/
+	margin: auto;
+	display: block;
+	width: 95%;
+	}
+FIELDSET {
+	padding: 0.5em;
+	margin: 0.5em 0em;
+	border: 1px solid #cccccc;
+	}
+
+LEGEND {
+	font-weight: bold;
+	padding: 0.3em;
+	}
+LABEL.checkboxLabel, LABEL.radioButtonLabel {
+	margin: 0.5em 0.3em;
+	}
+LABEL.inputLabel {
+	width: 11em;
+	float: left;
+	}
+LABEL.inputLabelPayment {
+	width: 15em;
+	float: left;
+	}
+LABEL.selectLabel, LABEL.switchedLabel, LABEL.uploadsLabel  {
+	width: 12em;
+	float: left;
+	}
+.alert {
+	color: #FF0000;
+	margin-left: 0.5em;
+	}
