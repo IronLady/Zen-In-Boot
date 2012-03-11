@@ -153,44 +153,6 @@ if ($flag_disable_left && $flag_disable_right) { ?>
     }
   }
 ?>
-<!--Begin Disqus http://www.samuelsena.com/zen-cart-disqus-comment-system/-->
-<?php if(DISQUS_STATUS != 'false') { ?>
-<div id="<?php echo DISQUS_ELEMENT_ID; ?>"></div>
-<script type="text/javascript">
-    var disqus_url = document.URL;
-    var disqus_identifier = document.URL;
-    var disqus_container_id = '<?php echo DISQUS_ELEMENT_ID; ?>';
-    var disqus_domain = 'disqus.com';
-    var disqus_shortname = '<?php echo DISQUS_SHORTNAME; ?>';
-    var disqus_title = "Zen Cart Bootstrap";
-    var disqus_config = function () {
-    var config = this; // Access to the config object
-
-        /*
-           All currently supported events:
-            * preData ?fires just before we request for initial data
-            * preInit - fires after we get initial data but before we load any dependencies
-            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
-            * afterRender - fires when template is rendered but before we show it
-            * onReady - everything is done
-         */
-
-        config.callbacks.preData.push(function() {
-            // clear out the container (its filled for SEO/legacy purposes)
-            document.getElementById(disqus_container_id).innerHTML = '';
-        });
-
-	};
-</script>
-<script type="text/javascript">
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<?php } ?>
 </div><!--span-centercolumn-->
 
 <?php if (!isset($flag_disable_right) || !$flag_disable_right) { ?>
